@@ -1,6 +1,8 @@
 package aston.hometask.task1;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.NoSuchElementException;
+import java.util.Objects;
 
 public class MyLinkedList<E> {
     private int size = 0;
@@ -14,21 +16,18 @@ public class MyLinkedList<E> {
         final E element = x.item;
         final Node<E> next = x.next;
         final Node<E> prev = x.prev;
-
         if (prev == null) {
             first = next;
         } else {
             prev.next = next;
             x.prev = null;
         }
-
         if (next == null) {
             last = prev;
         } else {
             next.prev = prev;
             x.next = null;
         }
-
         x.item = null;
         size--;
         return element;
@@ -69,19 +68,10 @@ public class MyLinkedList<E> {
     }
 
     public boolean remove(Object o) {
-        if (o == null) {
-            for (Node<E> x = first; x != null; x = x.next) {
-                if (x.item == null) {
-                    unlink(x);
-                    return true;
-                }
-            }
-        } else {
-            for (Node<E> x = first; x != null; x = x.next) {
-                if (o.equals(x.item)) {
-                    unlink(x);
-                    return true;
-                }
+        for (Node<E> x = first; x != null; x = x.next) {
+            if (Objects.equals(o, x.item)) {
+                unlink(x);
+                return true;
             }
         }
         return false;
@@ -135,20 +125,23 @@ public class MyLinkedList<E> {
     }
 
     private void checkElementIndex(int index) {
-        if (!isElementIndex(index))
+        if (!isElementIndex(index)) {
             throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
+        }
     }
 
     private Node<E> getNode(int index) {
         Node<E> x;
         if (index < (size >> 1)) {
             x = first;
-            for (int i = 0; i < index; i++)
+            for (int i = 0; i < index; i++) {
                 x = x.next;
+            }
         } else {
             x = last;
-            for (int i = size - 1; i > index; i--)
+            for (int i = size - 1; i > index; i--) {
                 x = x.prev;
+            }
         }
         return x;
     }
@@ -168,7 +161,6 @@ public class MyLinkedList<E> {
             }
             current = current.next;
         }
-
         sb.append("]");
         return sb.toString();
     }

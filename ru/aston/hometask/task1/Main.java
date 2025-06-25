@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) {
         MyHashSet<String> set = new MyHashSet<>();
         set.add("дерево");
+        set.add("дерево");
+        set.add("дом");
         set.add("дом");
         set.add("человек");
         set.add("наушник");
