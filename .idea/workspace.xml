@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53f92771-adfd-478b-9b3a-1ce9f6d5bbcb" name="Changes" comment="done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ru/aston/hometask/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ru/aston/hometask/task1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ru/aston/hometask/task1/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ru/aston/hometask/task1/MyHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ru/aston/hometask/task1/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/ru/aston/hometask/task1/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ru/aston/hometask/task2/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/ru/aston/hometask/task2/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ru/aston/hometask/task2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/ru/aston/hometask/task2/Student.java" afterDir="false" />
-    </list>
+    <list default="true" id="53f92771-adfd-478b-9b3a-1ce9f6d5bbcb" name="Changes" comment="version 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,12 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1750643917426</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 2">
+      <option name="closed" value="true" />
+      <created>1750894599446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750894599446</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="version 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2" />
   </component>
 </project>
